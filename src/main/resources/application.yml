@@ -1,0 +1,16 @@
+# 配置端口
+server:
+    port: 8181
+Spring:
+    # 配置数据源
+    datasource:
+        url: jdbc:mysql://localhost:3306/xiaoke?useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+        username: root
+        password: root
+        driver-class-name: com.mysql.jdbc.Driver
+
+mybatis-plus:
+    type-aliases-package: com.xiaoke.demo.beans
+    configuration:
+        log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
